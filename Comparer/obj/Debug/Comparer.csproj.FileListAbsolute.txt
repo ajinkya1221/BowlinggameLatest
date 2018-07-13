@@ -1,0 +1,6 @@
+C:\Users\ajink\Source\Repos\Comparer\Comparer\bin\Debug\Comparer.dll
+C:\Users\ajink\Source\Repos\Comparer\Comparer\bin\Debug\Comparer.pdb
+C:\Users\ajink\Source\Repos\Comparer\Comparer\obj\Debug\Comparer.csprojResolveAssemblyReference.cache
+C:\Users\ajink\Source\Repos\Comparer\Comparer\obj\Debug\Comparer.csproj.CoreCompileInputs.cache
+C:\Users\ajink\Source\Repos\Comparer\Comparer\obj\Debug\Comparer.dll
+C:\Users\ajink\Source\Repos\Comparer\Comparer\obj\Debug\Comparer.pdb
