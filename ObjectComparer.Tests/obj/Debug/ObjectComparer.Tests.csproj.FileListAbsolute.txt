@@ -14,3 +14,18 @@ C:\Users\ajink\Source\Repos\Comparer\ObjectComparer.Tests\obj\Debug\ObjectCompar
 C:\Users\ajink\Source\Repos\Comparer\ObjectComparer.Tests\obj\Debug\ObjectComparer.Tests.csproj.CopyComplete
 C:\Users\ajink\Source\Repos\Comparer\ObjectComparer.Tests\obj\Debug\ObjectComparer.Tests.dll
 C:\Users\ajink\Source\Repos\Comparer\ObjectComparer.Tests\obj\Debug\ObjectComparer.Tests.pdb
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\bin\Debug\ObjectComparer.Tests.dll
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\bin\Debug\ObjectComparer.Tests.pdb
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\bin\Debug\Comparer.dll
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\bin\Debug\Comparer.pdb
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\obj\Debug\ObjectComparer.Tests.csprojResolveAssemblyReference.cache
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\obj\Debug\ObjectComparer.Tests.csproj.CoreCompileInputs.cache
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\obj\Debug\ObjectComparer.Tests.dll
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\ObjectComparer.Tests\obj\Debug\ObjectComparer.Tests.pdb

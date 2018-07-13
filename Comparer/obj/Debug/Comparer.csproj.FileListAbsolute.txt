@@ -4,3 +4,9 @@ C:\Users\ajink\Source\Repos\Comparer\Comparer\obj\Debug\Comparer.csprojResolveAs
 C:\Users\ajink\Source\Repos\Comparer\Comparer\obj\Debug\Comparer.csproj.CoreCompileInputs.cache
 C:\Users\ajink\Source\Repos\Comparer\Comparer\obj\Debug\Comparer.dll
 C:\Users\ajink\Source\Repos\Comparer\Comparer\obj\Debug\Comparer.pdb
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\Comparer\bin\Debug\Comparer.dll
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\Comparer\bin\Debug\Comparer.pdb
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\Comparer\obj\Debug\Comparer.csprojResolveAssemblyReference.cache
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\Comparer\obj\Debug\Comparer.csproj.CoreCompileInputs.cache
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\Comparer\obj\Debug\Comparer.dll
+C:\Ajinkya\Clts\Git\object comparer\BowlinggameLatest\Comparer\obj\Debug\Comparer.pdb

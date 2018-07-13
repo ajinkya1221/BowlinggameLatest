@@ -15,10 +15,10 @@ namespace Comparer
             if (first == null || second == null)
                 return first == null && second == null;
 
-            if (IsValueType(typeof(T)) || first is string)
+            if (IsValueType(first.GetType()) || first is string)
                 return CompareValues(first, second);
 
-            if (IsEnumerableType(typeof(T)))
+            if (IsEnumerableType(first.GetType()))
             {
                 return CompareCollection(first, second);
             }
@@ -47,33 +47,45 @@ namespace Comparer
                 return first == null && second == null;
             else
             {
-                IEnumerable<object> firstCollection, secondCollection;
-                firstCollection = (IEnumerable<object>)first;
-                secondCollection = (IEnumerable<object>)second;
-
-                if (firstCollection.Count() != secondCollection.Count())
-                    return false;
-                else
+                if (first.GetType().IsArray)
                 {
-                    object firstCollValue, secondCollValue;
-                    Type collType;
-                    for (int itemIndex = 0; itemIndex < firstCollection.Count(); itemIndex++)
+                    dynamic val1 = first;
+                    dynamic val2 = second;
+
+                    if (val1.Length != val2.Length)
+                        return false;
+
+                    for (int i = 0; i < val1.Length; i++)
                     {
-                        firstCollValue = firstCollection.ElementAt(itemIndex);
-                        secondCollValue = secondCollection.ElementAt(itemIndex);
-                        collType = firstCollValue.GetType();
-                        if (IsValueType(collType))
+                        object arrVal1 = val1[i];
+                        object arrVal2 = val2[i];
+
+                        var type = arrVal1.GetType();
+                        if (IsValueType(type) || type == typeof(string))
                         {
-                            if (!CompareValues(firstCollValue, secondCollValue))
+                            if (!CompareValues(arrVal1, arrVal2))
+                            {
                                 return false;
+                            }
                         }
-                        else if (!CheckObjectProperties(firstCollValue, secondCollValue))
-                            return false;
+                        else
+                        {
+                            if (!CheckObjectProperties(arrVal1, arrVal2))
+                            {
+                                return false;
+                            }
+                        }
                     }
                 }
+                else if (first is IList && typeof(T).IsGenericType)
+                {
+
+                } else if(first is IDictionary && typeof(T).IsGenericType)
+                {
+
+                }                
             }
             return true;
-
         }
 
 
@@ -85,24 +97,9 @@ namespace Comparer
             bool returnVal = true;
             foreach (var prop in firstProperties)
             {
-                if (IsValueType(prop.PropertyType) || prop.PropertyType == typeof(string))
-                {
-                    returnVal = object.Equals(prop.GetValue(first, null), prop.GetValue(second, null));
-                    if (!returnVal)
-                        return false;
-                } else if (IsEnumerableType(prop.PropertyType))
-                {
-                    returnVal = CompareCollection(prop.GetValue(first, null), prop.GetValue(second, null));
-                    if (!returnVal)
-                        return false;
-                }
-                else
-                {
-                    returnVal = CheckObjectProperties(prop.GetValue(first, null), prop.GetValue(second, null));
-                    if (!returnVal)
-                        return false;
-                }
-                
+                returnVal = AreSimilar(prop.GetValue(first, null), prop.GetValue(second, null));
+                if (!returnVal)
+                    return false;
             }
             return true;
         }
